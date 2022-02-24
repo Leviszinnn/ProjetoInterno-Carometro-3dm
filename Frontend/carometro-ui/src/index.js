@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import {  Route, BrowserRouter as Router, Redirect, Switch } from 'react-router-dom';
+
 import reportWebVitals from './reportWebVitals';
 
 
 import { parseJWT, usuarioAutenticado } from './services/auth';
 
+import Cadastro from "./pages/cadastro/cadastro"
+
 const routing = (
   <Router>
     <div>
       <Switch>
+        <Route path="/" component={Cadastro}/>
         {/*
         Troca pelo que a gente fizer
         <Route exact path="/" component={Home} />
