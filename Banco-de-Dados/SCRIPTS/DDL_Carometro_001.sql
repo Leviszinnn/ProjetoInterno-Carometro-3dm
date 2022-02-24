@@ -10,7 +10,7 @@ CREATE TABLE escola(
 idEscola INT PRIMARY KEY IDENTITY(1,1),
 nomeEscola VARCHAR(30) NOT NULL,
 endereco VARCHAR(150) NOT NULL UNIQUE,
-numero TINYINT NOT NULL UNIQUE
+numero INT NOT NULL UNIQUE
 );
 GO
 
@@ -32,7 +32,7 @@ GO
 CREATE TABLE serie(
 idSerie INT PRIMARY KEY IDENTITY(1,1),
 idGrau INT FOREIGN KEY REFERENCES grauEscolar(idGrau),
-numeroSerie VARCHAR(2) NOT NULL
+numeroSerie VARCHAR(10) NOT NULL
 );
 GO
 
@@ -60,8 +60,5 @@ rm VARCHAR(4) NOT NULL,
 dataNascimento DATETIME NOT NULL,
 foto VARCHAR(300) NOT NULL
 );
-GO
-
-
 
 
