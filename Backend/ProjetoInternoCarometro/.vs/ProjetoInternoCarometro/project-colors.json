@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "89688cfa-af9f-48dc-ba64-49b407cfa365": {
+      "ProjectGuid": "89688cfa-af9f-48dc-ba64-49b407cfa365",
+      "DisplayName": "ProjetoInternoCarometro",
+      "ColorIndex": 0
+    },
+    "94db9986-8fee-486d-ab63-4d95139faaf7": {
+      "ProjectGuid": "94db9986-8fee-486d-ab63-4d95139faaf7",
+      "DisplayName": "ProjetoInternoTest",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
