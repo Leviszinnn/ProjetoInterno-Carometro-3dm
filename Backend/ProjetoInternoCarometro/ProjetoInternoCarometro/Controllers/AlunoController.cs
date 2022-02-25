@@ -28,7 +28,7 @@ namespace ProjetoInternoCarometro.Controllers
         {
             try
             {
-                _alunoRepository.cadastrarAluno(aluno);
+                //_alunoRepository.cadastrarAluno(aluno);
 
                 return StatusCode(201);
             }

@@ -4,5 +4,74 @@
         <name>ProjetoInternoCarometro</name>
     </assembly>
     <members>
+        <member name="M:ProjetoInternoCarometro.Controllers.LoginController.Login(ProjetoInternoCarometro.ViewModels.LoginViewModel)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="login">Objeto login que contém o e-mail e a senha do usuário</param>
+            <returns>Retorna um token com as informações do usuário</returns>
+            dominio/api/Login
+        </member>
+        <member name="T:ProjetoInternoCarometro.Interfaces.IAlunoRepository">
+            <summary>
+            Interface resonsável pela AlunoRepository
+            </summary>
+        </member>
+        <member name="T:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository">
+            <summary>
+            Interface resonsável pela AlunoRepository
+            </summary>
+        </member>
+        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository.ListarTodos">
+            <summary>
+            Lista todos os alunos
+            </summary>
+            <returns>uma lista com todos os alunos</returns>
+        </member>
+        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository.Cadastrar(ProjetoInternoCarometro.Domains.Aluno)">
+            <summary>
+            Cadastra um novo aluno
+            </summary>
+            <param name="novoAluno">objeto com as informações cadastradas</param>
+        </member>
+        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um aluno existente
+            </summary>
+            <param name="idAluno">id do aluno que será deletado</param>
+        </member>
+        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository.Atualizar(System.Int32,ProjetoInternoCarometro.Domains.Aluno)">
+            <summary>
+            Atualiza um aluno pelo seu id
+            </summary>
+            <param name="idAluno">id da clinica que será atualizada</param>
+            <param name="alunoAtualizado">objeto Clinica com as novas informações</param>
+        </member>
+        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository.SalvarPerfilDir(Microsoft.AspNetCore.Http.IFormFile,System.Int32)">
+            <summary>
+            Realiza upload de uma imagem no diretorio
+            </summary>
+            <param name="foto"></param>
+            <param name="idAluno"></param>
+        </member>
+        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository.ConsultarPerfilDir(System.Int32)">
+            <summary>
+            Consulta uma imagem
+            </summary>
+            <param name="idAluno">id do aluno que possui a imagem</param>
+        </member>
+        <member name="T:ProjetoInternoCarometro.Interfaces.IProfessorRepository">
+            <summary>
+            Interface resonsável pelo ProfessorRepository
+            </summary>
+        </member>
+        <member name="M:ProjetoInternoCarometro.Interfaces.IProfessorRepository.Login(System.String,System.String)">
+            <summary>
+            Valida um usuario
+            </summary>
+            <param name="email">email do usuario</param>
+            <param name="senha">senha do usuario</param>
+            <returns>Objeto Usuario que foi encontrado</returns>
+        </member>
     </members>
 </doc>

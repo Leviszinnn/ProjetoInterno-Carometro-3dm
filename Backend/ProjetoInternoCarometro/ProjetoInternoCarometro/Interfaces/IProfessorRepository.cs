@@ -9,7 +9,7 @@ namespace ProjetoInternoCarometro.Interfaces
     /// <summary>
     /// Interface resonsável pelo ProfessorRepository
     /// </summary>
-    interface IProfessorRepository
+    public interface IProfessorRepository
     {
 
         /// <summary>

@@ -29,8 +29,14 @@ namespace ProjetoInternoCarometro.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=NOTE0113E4\\SQLEXPRESS; initial catalog=DM_CAROMETRO; user Id=sa; pwd=Senai@132;");
+                //LEVI
+                //optionsBuilder.UseSqlServer("Data Source=NOTE0113E4\\SQLEXPRESS; initial catalog=DM_CAROMETRO; user Id=sa; pwd=Senai@132;");
+
+                //ANNY
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-9K54HD5\\SQLEXPRESS; initial catalog=DM_CAROMETRO; user Id=sa; pwd=senai@132;");
+
             }
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
