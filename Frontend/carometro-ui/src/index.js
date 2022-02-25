@@ -9,12 +9,16 @@ import reportWebVitals from './reportWebVitals';
 import { parseJWT, usuarioAutenticado } from './services/auth';
 
 import Cadastro from "./pages/cadastro/cadastro"
+import Listagem from "./pages/listagem/listagem"
+import Reconhecimento from "./pages/reconhecimento/reconhecimento"
 
 const routing = (
   <Router>
     <div>
       <Switch>
-        <Route path="/" component={Cadastro}/>
+        <Route path="/Cadastro" component={Cadastro}/>
+        <Route path="/Listagem" component={Listagem}/>
+        <Route path="/Reconhecimento" component={Reconhecimento}/>
         {/*
         Troca pelo que a gente fizer
         <Route exact path="/" component={Home} />
