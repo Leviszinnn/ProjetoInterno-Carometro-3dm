@@ -144,3 +144,5 @@ C:\Users\43717830821.INFOSCS\Desktop\ProjetoInterno-Carometro-3dm\Backend\Projet
 C:\Users\43717830821.INFOSCS\Desktop\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ref\ProjetoInternoCarometro.dll
 C:\Users\43717830821.INFOSCS\Desktop\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.pdb
 C:\Users\43717830821.INFOSCS\Desktop\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.genruntimeconfig.cache
+C:\Users\43717830821.INFOSCS\Desktop\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\bin\Debug\net5.0\ProjetoInternoCarometro.xml
+C:\Users\43717830821.INFOSCS\Desktop\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.xml
