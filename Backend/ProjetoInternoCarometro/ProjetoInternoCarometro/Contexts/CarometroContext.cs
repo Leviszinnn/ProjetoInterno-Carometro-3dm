@@ -29,10 +29,6 @@ namespace ProjetoInternoCarometro.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //LEVI
-                //optionsBuilder.UseSqlServer("Data Source=NOTE0113E4\\SQLEXPRESS; initial catalog=DM_CAROMETRO; user Id=sa; pwd=Senai@132;");
-
-                //ANNY
                 optionsBuilder.UseSqlServer("Data Source=DESKTOP-9K54HD5\\SQLEXPRESS; initial catalog=DM_CAROMETRO; user Id=sa; pwd=senai@132;");
 
             }

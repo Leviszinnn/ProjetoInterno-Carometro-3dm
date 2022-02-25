@@ -5,6 +5,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
+using ProjetoInternoCarometro.Interfaces;
+using ProjetoInternoCarometro.Repositories;
 using System;
 using System.IO;
 using System.Reflection;
@@ -55,7 +57,7 @@ namespace ProjetoInternoCarometro
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("carometro-chave-autenticacao")),
-                    ClockSkew = TimeSpan.FromMinutes(30),
+                    ClockSkew = TimeSpan.FromHours(1),
                     ValidIssuer = "ProjetoInternoCarometro",
                     ValidAudience = "ProjetoInternoCarometro"
                 };

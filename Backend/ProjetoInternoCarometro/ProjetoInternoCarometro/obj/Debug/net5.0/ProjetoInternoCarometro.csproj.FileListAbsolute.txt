@@ -67,7 +67,6 @@ C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\Projeto
 C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\scopedcss\bundle\ProjetoInternoCarometro.styles.css
 C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\staticwebassets\ProjetoInternoCarometro.StaticWebAssets.Manifest.cache
 C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.RazorTargetAssemblyInfo.cache
-C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.csproj.CopyComplete
 C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.dll
 C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ref\ProjetoInternoCarometro.dll
 C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.xml

@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoInternoCarometro.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class LoginController : ControllerBase
@@ -57,8 +58,6 @@ namespace ProjetoInternoCarometro.Controllers
                     new Claim(JwtRegisteredClaimNames.Email, profBuscado.Email),
                     new Claim(JwtRegisteredClaimNames.Jti, profBuscado.IdProfessor.ToString()),
 
-                 
-
                 };
 
                 var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("carometro-chave-autenticacao"));
@@ -66,8 +65,8 @@ namespace ProjetoInternoCarometro.Controllers
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
                 var meuToken = new JwtSecurityToken(
-                        issuer: "ProjetoInternoCarometro.webAPI",
-                        audience: "ProjetoInternoCarometro.webAPI",
+                        issuer: "ProjetoInternoCarometro",
+                        audience: "ProjetoInternoCarometro",
                         claims: minhasClaims,
                         expires: DateTime.Now.AddHours(1),
                         signingCredentials: creds
