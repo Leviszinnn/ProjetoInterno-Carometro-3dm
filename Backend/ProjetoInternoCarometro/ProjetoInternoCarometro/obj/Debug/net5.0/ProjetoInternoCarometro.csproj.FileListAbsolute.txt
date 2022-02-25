@@ -144,6 +144,7 @@ C:\Users\43717830821.INFOSCS\Desktop\ProjetoInterno-Carometro-3dm\Backend\Projet
 C:\Users\43717830821.INFOSCS\Desktop\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ref\ProjetoInternoCarometro.dll
 C:\Users\43717830821.INFOSCS\Desktop\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.pdb
 C:\Users\43717830821.INFOSCS\Desktop\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\bin\Debug\net5.0\appsettings.json
 C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\bin\Debug\net5.0\ProjetoInternoCarometro.exe
@@ -217,3 +218,7 @@ C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\Projeto
 C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ref\ProjetoInternoCarometro.dll
 C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.pdb
 C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.genruntimeconfig.cache
+=======
+C:\Users\43717830821.INFOSCS\Desktop\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\bin\Debug\net5.0\ProjetoInternoCarometro.xml
+C:\Users\43717830821.INFOSCS\Desktop\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.xml
+>>>>>>> ef020edaba878db987ee4a142dd1c3c20e60c8c5

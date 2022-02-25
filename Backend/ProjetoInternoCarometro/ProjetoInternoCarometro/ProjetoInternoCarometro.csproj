@@ -19,10 +19,18 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
   </ItemGroup>
 
+    <ItemGroup>
+		<Folder Include="ImgPerfil" />
+	</ItemGroup>
+
+
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+	</PropertyGroup>
+	
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="ViewModels\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>
