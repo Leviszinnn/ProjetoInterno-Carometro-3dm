@@ -10,12 +10,7 @@ namespace ProjetoInternoCarometro.Interfaces
     /// <summary>
     /// Interface resonsável pela AlunoRepository
     /// </summary>
-    interface IAlunoRepository
-    {
-
-        /// <summary>
-        /// Interface resonsável pela AlunoRepository
-        /// </summary>
+    
         interface IAlunoRepository
         {
             /// <summary>
@@ -64,4 +59,3 @@ namespace ProjetoInternoCarometro.Interfaces
 
         }
     }
-}

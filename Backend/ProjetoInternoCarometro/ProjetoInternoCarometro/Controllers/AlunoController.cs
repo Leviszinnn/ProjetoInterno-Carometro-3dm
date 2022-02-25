@@ -16,7 +16,7 @@ namespace ProjetoInternoCarometro.Controllers
     [ApiController]
     public class AlunoController : ControllerBase
     {
-        private IAlunoRepository _alunoRepository { get; set; }
+        private IAlunoRepository _alunoRepository;
 
         public AlunoController()
         {
@@ -24,13 +24,31 @@ namespace ProjetoInternoCarometro.Controllers
         }
 
         [HttpPost("cadastrar")]
-        public IActionResult Cadastrar(Aluno aluno)
+        public IActionResult Cadastrar(Aluno novoAluno)
         {
             try
             {
+<<<<<<< HEAD
+                _alunoRepository.Cadastrar(novoAluno);
+=======
                 //_alunoRepository.cadastrarAluno(aluno);
 
+>>>>>>> e2116917b17cd056d8036a0f16c7c84cae226e8a
                 return StatusCode(201);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Atualizar(int id, Aluno alunoAtualizado)
+        {
+            try
+            {
+                _alunoRepository.Atualizar(id, alunoAtualizado);
+                return StatusCode(204);
             }
             catch (Exception ex)
             {
