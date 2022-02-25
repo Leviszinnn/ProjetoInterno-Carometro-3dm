@@ -36,5 +36,19 @@ namespace ProjetoInternoCarometro.Controllers
                 return BadRequest(ex);
             }
         }
+
+        [HttpPut("{id}")]
+        public IActionResult Atualizar(int id, Aluno alunoAtualizado)
+        {
+            try
+            {
+                _alunoRepository.Atualizar(id, alunoAtualizado);
+                return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
     }
 }

@@ -16,7 +16,50 @@ namespace ProjetoInternoCarometro.Repositories
 
         public void Atualizar(int idAluno, Aluno alunoAtualizado)
         {
-            throw new NotImplementedException();
+            Aluno AlunoBuscado = ctx.Alunos.Find(idAluno);
+
+            if (alunoAtualizado.IdEscola != null)
+            {
+                AlunoBuscado.IdEscola = alunoAtualizado.IdEscola;
+            }
+
+            if (alunoAtualizado.IdSerie != null)
+            {
+                AlunoBuscado.IdSerie = alunoAtualizado.IdSerie;
+            }
+
+            if (alunoAtualizado.IdTurma != null)
+            {
+                AlunoBuscado.IdTurma = alunoAtualizado.IdTurma;
+            }
+
+            if (alunoAtualizado.IdFace != null)
+            {
+                AlunoBuscado.IdFace = alunoAtualizado.IdFace;
+            }
+
+            if (alunoAtualizado.NomeAluno != null)
+            {
+                AlunoBuscado.NomeAluno = alunoAtualizado.NomeAluno;
+            }
+
+            if (alunoAtualizado.Cpf != null)
+            {
+                AlunoBuscado.Cpf = alunoAtualizado.Cpf;
+            }
+
+            if (alunoAtualizado.Rm != null)
+            {
+                AlunoBuscado.Rm = alunoAtualizado.Rm;
+            }
+
+            if (alunoAtualizado.Foto != null)
+            {
+                AlunoBuscado.Foto = alunoAtualizado.Foto;
+            }
+
+            ctx.Alunos.Update(AlunoBuscado);
+            ctx.SaveChanges();
         }
 
         public void Cadastrar(Aluno novoAluno)
