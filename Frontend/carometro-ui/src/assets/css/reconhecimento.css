@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --mainColor: #E5E5E5;
+    --secondMain: #727171;
+    --secondaryColor: #FF0000;
+    --complementFund1: #FF635A;
+    --complementFund2: #FAF46B;
+    --complementEM: #5AF078;
+}
+
+.c-reconhecimento{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/fundoSalaAula.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.c-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+video{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.c-div button{
+    width: 40%;
+    height: 30px;
+    background-color: var(--secondaryColor);
+    color: white;
+    border-radius: 168px;
+    border: none;
+    transition: 0.5s;
+    font-size: 16px;
+    margin: 14px 0;
+}
+
+.c-div button:hover{
+    width: 50%;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.c-video{
+    display: flex;
+}
+
+.c-foto{
+    display: none;
+}
