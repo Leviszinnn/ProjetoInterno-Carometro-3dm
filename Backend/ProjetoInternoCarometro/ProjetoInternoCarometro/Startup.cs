@@ -54,7 +54,7 @@ namespace ProjetoInternoCarometro
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidateLifetime = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("Carometro-chave-autenticacao")),
+                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("carometro-chave-autenticacao")),
                     ClockSkew = TimeSpan.FromMinutes(30),
                     ValidIssuer = "ProjetoInternoCarometro",
                     ValidAudience = "ProjetoInternoCarometro"
