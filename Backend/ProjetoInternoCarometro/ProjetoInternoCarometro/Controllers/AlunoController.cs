@@ -16,7 +16,7 @@ namespace ProjetoInternoCarometro.Controllers
     [ApiController]
     public class AlunoController : ControllerBase
     {
-        private IAlunoRepository _alunoRepository { get; set; }
+        private IAlunoRepository _alunoRepository;
 
         public AlunoController()
         {
@@ -24,12 +24,11 @@ namespace ProjetoInternoCarometro.Controllers
         }
 
         [HttpPost("cadastrar")]
-        public IActionResult Cadastrar(Aluno aluno)
+        public IActionResult Cadastrar(Aluno novoAluno)
         {
             try
             {
-                _alunoRepository.cadastrarAluno(aluno);
-
+                _alunoRepository.Cadastrar(novoAluno);
                 return StatusCode(201);
             }
             catch (Exception ex)

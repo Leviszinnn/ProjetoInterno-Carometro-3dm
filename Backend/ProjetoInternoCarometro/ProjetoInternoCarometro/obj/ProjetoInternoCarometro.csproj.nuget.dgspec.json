@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\45597675800.INFOSCS\\Desktop\\SENAI\\3DM-Projeto-Carometro\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\ProjetoInternoCarometro.csproj": {}
+    "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\ProjetoInternoCarometro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\45597675800.INFOSCS\\Desktop\\SENAI\\3DM-Projeto-Carometro\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\ProjetoInternoCarometro.csproj": {
+    "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\ProjetoInternoCarometro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\45597675800.INFOSCS\\Desktop\\SENAI\\3DM-Projeto-Carometro\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\ProjetoInternoCarometro.csproj",
+        "projectUniqueName": "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\ProjetoInternoCarometro.csproj",
         "projectName": "ProjetoInternoCarometro",
-        "projectPath": "C:\\Users\\45597675800.INFOSCS\\Desktop\\SENAI\\3DM-Projeto-Carometro\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\ProjetoInternoCarometro.csproj",
-        "packagesPath": "C:\\Users\\45597675800.INFOSCS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\45597675800.INFOSCS\\Desktop\\SENAI\\3DM-Projeto-Carometro\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\obj\\",
+        "projectPath": "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\ProjetoInternoCarometro.csproj",
+        "packagesPath": "C:\\Users\\43717830821.INFOSCS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\45597675800.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\43717830821.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +49,10 @@
               "version": "[5.0.12, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.12, )"
             },
@@ -92,7 +96,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.12, 5.0.12]"
+              "version": "[5.0.14, 5.0.14]"
             }
           ],
           "frameworkReferences": {
@@ -103,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
