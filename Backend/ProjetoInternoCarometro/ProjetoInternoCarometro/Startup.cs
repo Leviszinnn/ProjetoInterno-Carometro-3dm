@@ -22,6 +22,17 @@ namespace ProjetoInternoCarometro
                     options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
                 });
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorPolicy",
+                                builder =>
+                                {
+                                    builder.WithOrigins("*")
+                                    .AllowAnyHeader()
+                                    .AllowAnyMethod();
+                                });
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProjetoInternoCarometro", Version = "v1" });
@@ -66,6 +77,8 @@ namespace ProjetoInternoCarometro
             });
 
             app.UseRouting();
+
+            app.UseCors("CorPolicy");
 
             app.UseAuthentication();
 
