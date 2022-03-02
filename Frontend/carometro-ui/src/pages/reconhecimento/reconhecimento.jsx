@@ -13,7 +13,7 @@ export default function Cadastro() {
     const [hasPhoto, setHasPhoto] = useState(true);
 
     const [faceIdSelfie, setFaceIdSelfie] = useState("");
-    const [clientId, setClientId] = useState("0edf2a694939d79");
+    const [linkFoto, setLinkFoto] = useState("");
 
     const getVideo = () => {
         navigator.mediaDevices
@@ -30,7 +30,7 @@ export default function Cadastro() {
             })
     }
 
-    async function takePhoto()  {
+    function takePhoto()  {
         const width = 640;
         const height = 480;
 
@@ -44,13 +44,15 @@ export default function Cadastro() {
         let ctx = photo.getContext("2d");
         ctx.drawImage(video, 0, 0, width, height);
 
-        console.log(photo.toDataURL());
+        // console.log(photo.toDataURL());
 
         uploadImage(photo.toDataURL());
 
-        detectarface("https://pbs.twimg.com/media/Ek-OKPOXYAQ0nAy?format=jpg&name=large");
-        
-        await console.log(faceIdSelfie);
+        // console.log(linkFoto)
+
+        // detectarface(linkFoto)
+
+        // console.log(faceIdSelfie)
 
         trocarVideoFoto();
     }
@@ -78,7 +80,6 @@ export default function Cadastro() {
 
     function uploadImage(base64Img) {
         var myHeaders = new Headers();
-        myHeaders.append("Access-Control-Allow-Origin", "*");
 
         var formdata = new FormData();
         formdata.append("file", base64Img);
@@ -88,14 +89,12 @@ export default function Cadastro() {
         var requestOptions = {
             method: 'POST',
             headers: myHeaders,
-            body: formdata,
-            resource_type: "image",
-            mode: "cors"
+            body: formdata
         };
 
-        fetch("https://api.cloudinary.com/v1_1/capigbs/:resource_type/upload", requestOptions)
-            .then(response => response.text())
-            .then(result => console.log(result))
+        fetch("https://api.cloudinary.com/v1_1/capigbs/image/upload", requestOptions)
+            .then(response => response.json())
+            .then(result => detectarface(result.url))
             .catch(error => console.log('error', error));
     }
 
@@ -112,7 +111,7 @@ export default function Cadastro() {
              if (resposta.status === 200) {
                 //  console.log(resposta);
                  resposta.json().then((data)=>{
-                    //  console.log(data[0].faceId);
+                     console.log(data[0].faceId);
                      setFaceIdSelfie(data[0].faceId);
                  })
              }
