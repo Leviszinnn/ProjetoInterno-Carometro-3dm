@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoInternoCarometro", "ProjetoInternoCarometro\ProjetoInternoCarometro.csproj", "{89688CFA-AF9F-48DC-BA64-49B407CFA365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoInternoTest", "ProjetoInternoTest\ProjetoInternoTest.csproj", "{94DB9986-8FEE-486D-AB63-4D95139FAAF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89688CFA-AF9F-48DC-BA64-49B407CFA365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89688CFA-AF9F-48DC-BA64-49B407CFA365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89688CFA-AF9F-48DC-BA64-49B407CFA365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89688CFA-AF9F-48DC-BA64-49B407CFA365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94DB9986-8FEE-486D-AB63-4D95139FAAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94DB9986-8FEE-486D-AB63-4D95139FAAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94DB9986-8FEE-486D-AB63-4D95139FAAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94DB9986-8FEE-486D-AB63-4D95139FAAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61B8BFEF-A7F6-4C94-96A7-CED5ED7DA254}
+	EndGlobalSection
+EndGlobal
