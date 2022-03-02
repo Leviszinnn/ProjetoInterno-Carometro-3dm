@@ -4,8 +4,6 @@
         <name>ProjetoInternoCarometro</name>
     </assembly>
     <members>
-<<<<<<< HEAD
-=======
         <member name="M:ProjetoInternoCarometro.Controllers.LoginController.Login(ProjetoInternoCarometro.ViewModels.LoginViewModel)">
             <summary>
             Valida o usuário
@@ -14,78 +12,42 @@
             <returns>Retorna um token com as informações do usuário</returns>
             dominio/api/Login
         </member>
->>>>>>> e2116917b17cd056d8036a0f16c7c84cae226e8a
         <member name="T:ProjetoInternoCarometro.Interfaces.IAlunoRepository">
             <summary>
             Interface resonsável pela AlunoRepository
             </summary>
         </member>
-<<<<<<< HEAD
         <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.ListarTodos">
-=======
-        <member name="T:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository">
-            <summary>
-            Interface resonsável pela AlunoRepository
-            </summary>
-        </member>
-        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository.ListarTodos">
->>>>>>> e2116917b17cd056d8036a0f16c7c84cae226e8a
             <summary>
             Lista todos os alunos
             </summary>
             <returns>uma lista com todos os alunos</returns>
         </member>
-<<<<<<< HEAD
         <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.Cadastrar(ProjetoInternoCarometro.Domains.Aluno)">
-=======
-        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository.Cadastrar(ProjetoInternoCarometro.Domains.Aluno)">
->>>>>>> e2116917b17cd056d8036a0f16c7c84cae226e8a
             <summary>
             Cadastra um novo aluno
             </summary>
             <param name="novoAluno">objeto com as informações cadastradas</param>
         </member>
-<<<<<<< HEAD
-        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.Deletar(System.Int32)">
-=======
-        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository.Deletar(System.Int32)">
->>>>>>> e2116917b17cd056d8036a0f16c7c84cae226e8a
+        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.Deletar(ProjetoInternoCarometro.Domains.Aluno)">
             <summary>
             Deleta um aluno existente
             </summary>
-            <param name="idAluno">id do aluno que será deletado</param>
+            <param name="aluno">aluno que será deletado</param>
         </member>
-<<<<<<< HEAD
         <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.Atualizar(System.Int32,ProjetoInternoCarometro.Domains.Aluno)">
-=======
-        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository.Atualizar(System.Int32,ProjetoInternoCarometro.Domains.Aluno)">
->>>>>>> e2116917b17cd056d8036a0f16c7c84cae226e8a
             <summary>
             Atualiza um aluno pelo seu id
             </summary>
             <param name="idAluno">id da clinica que será atualizada</param>
             <param name="alunoAtualizado">objeto Clinica com as novas informações</param>
         </member>
-<<<<<<< HEAD
-        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.SalvarPerfilDir(Microsoft.AspNetCore.Http.IFormFile,System.Int32)">
-=======
-        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository.SalvarPerfilDir(Microsoft.AspNetCore.Http.IFormFile,System.Int32)">
->>>>>>> e2116917b17cd056d8036a0f16c7c84cae226e8a
+        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.BuscarId(System.Int32)">
             <summary>
-            Realiza upload de uma imagem no diretorio
+            Busca um aluno pelo seu id
             </summary>
-            <param name="foto"></param>
-            <param name="idAluno"></param>
-        </member>
-<<<<<<< HEAD
-        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.ConsultarPerfilDir(System.Int32)">
-=======
-        <member name="M:ProjetoInternoCarometro.Interfaces.IAlunoRepository.IAlunoRepository.ConsultarPerfilDir(System.Int32)">
->>>>>>> e2116917b17cd056d8036a0f16c7c84cae226e8a
-            <summary>
-            Consulta uma imagem
-            </summary>
-            <param name="idAluno">id do aluno que possui a imagem</param>
+            <param name="idAluno">id do aluno que será buscado</param>
+            <returns></returns>
         </member>
         <member name="T:ProjetoInternoCarometro.Interfaces.IProfessorRepository">
             <summary>
@@ -99,6 +61,35 @@
             <param name="email">email do usuario</param>
             <param name="senha">senha do usuario</param>
             <returns>Objeto Usuario que foi encontrado</returns>
+        </member>
+        <member name="M:ProjetoInternoCarometro.Utils.Upload.UploadFile(Microsoft.AspNetCore.Http.IFormFile,System.String[])">
+            <summary>
+            Faz o upload do arquivo para o servidor
+            </summary>
+            <param name="arquivo">Arquivo vindo de um formulário</param>
+            <param name="extensoesPermitidas">Array com extensões permitidas apenas</param>
+            <returns>Nome do arquivo salvo</returns>
+        </member>
+        <member name="M:ProjetoInternoCarometro.Utils.Upload.ValidarExtensao(System.String[],System.String)">
+            <summary>
+            Valida o uso de enxtensões permitidas apenas
+            </summary>
+            <param name="extensoes">Array de extensões permitidas</param>
+            <param name="nomeDoArquivo">Nome do arquivo</param>
+            <returns>Verdadeiro/Falso</returns>
+        </member>
+        <member name="M:ProjetoInternoCarometro.Utils.Upload.RemoverArquivo(System.String)">
+            <summary>
+            Remove um arquivo do servidor
+            </summary>
+            <param name="nomeDoArquivo">Nome do Arquivo</param>
+        </member>
+        <member name="M:ProjetoInternoCarometro.Utils.Upload.RetornarExtensao(System.String)">
+            <summary>
+            Retorna a extensão de um arquivo
+            </summary>
+            <param name="nomeDoArquivo">Nome do Arquivo</param>
+            <returns>Retorna a extensão de um arquivo</returns>
         </member>
     </members>
 </doc>

@@ -44,15 +44,6 @@ namespace ProjetoInternoCarometro.Controllers
                     return Unauthorized(new { msg = "Email ou senha inválidos!" });
                 }
 
-                // Caso o usuário seja encontrado, prossegue para a criação do token
-
-                /*
-                    Dependências
-
-                    Criar e validar o JWT:      System.IdentityModel.Tokens.Jwt
-                    Integrar a autenticação:    Microsoft.AspNetCore.Authentication.JwtBearer (versão compatível com o .NET do projeto)
-                */
-
                 var minhasClaims = new[]
                 {
                     new Claim(JwtRegisteredClaimNames.Email, profBuscado.Email),

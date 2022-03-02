@@ -27,11 +27,11 @@ namespace ProjetoInternoCarometro.Interfaces
             void Cadastrar(Aluno novoAluno);
 
 
-            /// <summary>
-            /// Deleta um aluno existente
-            /// </summary>
-            /// <param name="idAluno">id do aluno que será deletado</param>
-            void Deletar(int idAluno);
+        /// <summary>
+        /// Deleta um aluno existente
+        /// </summary>
+        /// <param name="aluno">aluno que será deletado</param>
+        void Deletar(Aluno aluno);
 
 
 
@@ -43,19 +43,13 @@ namespace ProjetoInternoCarometro.Interfaces
             void Atualizar(int idAluno, Aluno alunoAtualizado);
 
 
-            /// <summary>
-            /// Realiza upload de uma imagem no diretorio
-            /// </summary>
-            /// <param name="foto"></param>
-            /// <param name="idAluno"></param>
-            string SalvarPerfilDir(IFormFile foto, int idAluno);
+        /// <summary>
+        /// Busca um aluno pelo seu id
+        /// </summary>
+        /// <param name="idAluno">id do aluno que será buscado</param>
+        /// <returns></returns>
+        Aluno BuscarId(int idAluno);
 
-
-            /// <summary>
-            /// Consulta uma imagem
-            /// </summary>
-            /// <param name="idAluno">id do aluno que possui a imagem</param>
-            string ConsultarPerfilDir(int idAluno);
 
         }
     }

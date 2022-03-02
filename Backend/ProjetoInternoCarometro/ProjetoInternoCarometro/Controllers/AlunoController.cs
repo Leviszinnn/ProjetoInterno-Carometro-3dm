@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using ProjetoInternoCarometro.Domains;
 using ProjetoInternoCarometro.Interfaces;
 using ProjetoInternoCarometro.Repositories;
+using ProjetoInternoCarometro.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,12 +29,8 @@ namespace ProjetoInternoCarometro.Controllers
         {
             try
             {
-<<<<<<< HEAD
                 _alunoRepository.Cadastrar(novoAluno);
-=======
-                //_alunoRepository.cadastrarAluno(aluno);
 
->>>>>>> e2116917b17cd056d8036a0f16c7c84cae226e8a
                 return StatusCode(201);
             }
             catch (Exception ex)
@@ -55,5 +52,79 @@ namespace ProjetoInternoCarometro.Controllers
                 return BadRequest(ex);
             }
         }
+
+
+        [HttpGet]
+        public IActionResult ListarTodos()
+        {
+            try
+            {
+                return Ok(_alunoRepository.ListarTodos());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+
+
+        [HttpDelete("{idAluno}")]
+        public IActionResult Deletar(int idAluno)
+        {
+            try
+            {
+
+                var alunoBuscado = _alunoRepository.BuscarId(idAluno);
+                if (alunoBuscado == null)
+                {
+                    return NotFound();
+                }
+
+                _alunoRepository.Deletar(alunoBuscado);
+
+
+                //Removendo Arquivo do servidor
+               Upload.RemoverArquivo(alunoBuscado.Foto);
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+
+
+
+        [HttpPost("imagem")]
+        public IActionResult PostarDir([FromForm] Aluno aluno, IFormFile arquivo)
+        {
+            try
+            {
+                string[] extensoesPermitidas = { "jpg", "png", "jpeg", "gif" };
+                string uploadResultado = Upload.UploadFile(arquivo, extensoesPermitidas);
+
+                if (uploadResultado == "")
+                {
+                    return BadRequest("Arquivo não encontrado!");
+                }
+
+                if (uploadResultado == "Extensão não permitida!")
+                {
+                    return BadRequest("Extensão de arquivo não permitida!");
+                }
+
+                aluno.Foto = uploadResultado;
+
+                return Ok();
+            }
+            catch (Exception erro)
+            {
+
+                return BadRequest(erro.Message);
+            }
+        }
+
+
     }
 }

@@ -62,30 +62,29 @@ namespace ProjetoInternoCarometro.Repositories
             ctx.SaveChanges();
         }
 
+        public Aluno BuscarId(int idAluno)
+        {
+            return ctx.Alunos.FirstOrDefault(a => a.IdAluno == idAluno);
+        }
+
         public void Cadastrar(Aluno novoAluno)
         {
             ctx.Alunos.Add(novoAluno);
             ctx.SaveChanges();
         }
 
-        public string ConsultarPerfilDir(int idAluno)
+      
+        public void Deletar(Aluno aluno)
         {
-            throw new NotImplementedException();
-        }
-
-        public void Deletar(int idAluno)
-        {
-            throw new NotImplementedException();
+            ctx.Alunos.Remove(aluno);
+            ctx.SaveChanges();
         }
 
         public List<Aluno> ListarTodos()
         {
-            throw new NotImplementedException();
+           return ctx.Alunos.ToList();
         }
 
-        public string SalvarPerfilDir(IFormFile foto, int idAluno)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }

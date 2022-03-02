@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\ProjetoInternoTest.csproj": {}
+    "C:\\Users\\elilt\\OneDrive\\Documentos\\SENAI\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\ProjetoInternoTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\ProjetoInternoTest.csproj": {
+    "C:\\Users\\elilt\\OneDrive\\Documentos\\SENAI\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\ProjetoInternoTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\ProjetoInternoTest.csproj",
+        "projectUniqueName": "C:\\Users\\elilt\\OneDrive\\Documentos\\SENAI\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\ProjetoInternoTest.csproj",
         "projectName": "ProjetoInternoTest",
-        "projectPath": "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\ProjetoInternoTest.csproj",
-        "packagesPath": "C:\\Users\\43717830821.INFOSCS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\obj\\",
+        "projectPath": "C:\\Users\\elilt\\OneDrive\\Documentos\\SENAI\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\ProjetoInternoTest.csproj",
+        "packagesPath": "C:\\Users\\elilt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elilt\\OneDrive\\Documentos\\SENAI\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\43717830821.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\elilt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

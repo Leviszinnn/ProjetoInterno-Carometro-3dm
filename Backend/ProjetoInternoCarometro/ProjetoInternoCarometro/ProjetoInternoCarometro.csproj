@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ImgPerfil\**" />
+    <Content Remove="ImgPerfil\**" />
+    <EmbeddedResource Remove="ImgPerfil\**" />
+    <None Remove="ImgPerfil\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.12" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.12" />
@@ -20,9 +27,9 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
   </ItemGroup>
 
-    <ItemGroup>
-		<Folder Include="ImgPerfil" />
-	</ItemGroup>
+  <ItemGroup>
+    <Folder Include="StaticFiles\Images\" />
+  </ItemGroup>
 
 
 	<PropertyGroup>

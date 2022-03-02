@@ -49,7 +49,7 @@ namespace ProjetoInternoCarometro.Repositories
             //}
 
             //return null;
-            ////return ctx.Usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
+            //return ctx.Usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
         }
     }
 }
