@@ -25,11 +25,26 @@ namespace ProjetoInternoCarometro.Controllers
         }
 
         [HttpPost("cadastrar")]
-        public IActionResult Cadastrar(Aluno novoAluno)
+        public IActionResult Cadastrar([FromForm] Aluno novoAluno, IFormFile arquivo)
         {
             try
             {
                 _alunoRepository.Cadastrar(novoAluno);
+
+                string[] extensoesPermitidas = { "jpg", "png", "jpeg", "gif" };
+                string uploadResultado = Upload.UploadFile(arquivo, extensoesPermitidas);
+
+                if (uploadResultado == "")
+                {
+                    return BadRequest("Arquivo não encontrado!");
+                }
+
+                if (uploadResultado == "Extensão não permitida!")
+                {
+                    return BadRequest("Extensão de arquivo não permitida!");
+                }
+
+                novoAluno.Foto = uploadResultado;
 
                 return StatusCode(201);
             }
