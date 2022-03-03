@@ -148,3 +148,4 @@ C:\Users\elilt\OneDrive\Documentos\SENAI\ProjetoInterno-Carometro-3dm\Backend\Pr
 C:\Users\elilt\OneDrive\Documentos\SENAI\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.RazorTargetAssemblyInfo.cache
 C:\Users\elilt\OneDrive\Documentos\SENAI\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.csproj.CopyComplete
 C:\Users\elilt\OneDrive\Documentos\SENAI\ProjetoInterno-Carometro-3dm\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\obj\Debug\net5.0\ProjetoInternoCarometro.genruntimeconfig.cache
+C:\Users\45597675800.INFOSCS\Desktop\SENAI\3DM-Projeto-Carometro\Backend\ProjetoInternoCarometro\ProjetoInternoCarometro\bin\Debug\net5.0\ProjetoInternoCarometro.StaticWebAssets.xml
