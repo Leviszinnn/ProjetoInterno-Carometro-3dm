@@ -29,6 +29,7 @@ namespace ProjetoInternoCarometro.Controllers
         {
             try
             {
+
                 _alunoRepository.Cadastrar(novoAluno);
 
                 return StatusCode(201);
