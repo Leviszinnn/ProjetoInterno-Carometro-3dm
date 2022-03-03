@@ -43,7 +43,7 @@ idProfessor INT PRIMARY KEY IDENTITY(1,1),
 idEscola INT FOREIGN KEY REFERENCES escola(idEscola),
 nomeProfessor VARCHAR(30),
 email VARCHAR(200) UNIQUE NOT NULL,
-senha VARCHAR(20) NOT NULL
+senha VARCHAR(100) NOT NULL
 );
 GO
 
