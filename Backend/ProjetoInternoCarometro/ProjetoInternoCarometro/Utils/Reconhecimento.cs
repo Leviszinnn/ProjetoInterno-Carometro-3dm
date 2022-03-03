@@ -7,5 +7,8 @@ namespace ProjetoInternoCarometro.Utils
 {
     public class Reconhecimento
     {
+
+
+
     }
 }

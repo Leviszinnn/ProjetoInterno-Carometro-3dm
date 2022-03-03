@@ -24,7 +24,7 @@ namespace ProjetoInternoCarometro.Repositories
             //return ctx.Professors.FirstOrDefault(u => u.Email == email && u.Senha == senha);
 
             //Encontrando algum usuário que exista através do email
-            var professor = ctx.Professors.FirstOrDefault(u => u.Email == email);
+            var professor = ctx.Professors.FirstOrDefault(p => p.Email == email);
 
             if (professor != null)
             {
@@ -49,7 +49,6 @@ namespace ProjetoInternoCarometro.Repositories
             }
 
             return null;
-            //return ctx.Usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
         }
     }
 }

@@ -15,6 +15,7 @@ namespace ProjetoInternoCarometro.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AlunoController : ControllerBase
     {
         private IAlunoRepository _alunoRepository;
