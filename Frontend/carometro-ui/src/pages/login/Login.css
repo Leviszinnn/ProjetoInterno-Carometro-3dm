@@ -1,19 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 .App {
     text-align: center;
   }
   
   .Fundo-entrada{
+    background-color: #282c34;
     background-image: url(../../assets/img/fundoEntrada.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .box-conteudo{
+    background: rgba(255, 253, 253, 0.9);
+
   }
   
   .App-header {
     /* background-color: #282c34; */
     
-    min-height: 100vh;
-    display: flex;
+    height: 100%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: 50px;
     color: white;
   }

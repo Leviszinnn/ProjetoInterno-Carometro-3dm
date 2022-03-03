@@ -60,33 +60,37 @@ export default class Login extends Component {
         {/* <header className="App-header">
           <span>teste</span>
         </header> */}
-        <main className='Fundo-entrada'>
-          <div className=" App-header">
-            <form onSubmit={this.efetuaLogin}>
-              <input
-                type="text"
-                name="email"
-                value={this.state.email}
-                onChange={this.atualizaStateCampo}
-                placeholder="Email"
-              />
-              <input
-                type="password"
-                name="senha"
-                value={this.state.senha}
-                onChange={this.atualizaStateCampo}
-                placeholder="Senha"
-              />
-              {
-                this.state.isLoading === true &&
-                <button type='submit' disabled>Loading...</button>
-              }
-              {
-                this.state.isLoading === false &&
-                <button type='submit' disabled={this.state.email === '' || this.state.senha === '' ? 'none' : ''}>Login</button>
-              }
-            </form>
-          </div>
+        <main >
+          <section className='Fundo-entrada'>
+            <div className='box-conteudo'>
+              <div className='Logo'>
+                <form className=" App-header" onSubmit={this.efetuaLogin}>
+                  <input
+                    type="text"
+                    name="email"
+                    value={this.state.email}
+                    onChange={this.atualizaStateCampo}
+                    placeholder="Email"
+                  />
+                  <input
+                    type="password"
+                    name="senha"
+                    value={this.state.senha}
+                    onChange={this.atualizaStateCampo}
+                    placeholder="Senha"
+                  />
+                  {
+                    this.state.isLoading === true &&
+                    <button type='submit' disabled>Loading...</button>
+                  }
+                  {
+                    this.state.isLoading === false &&
+                    <button type='submit' disabled={this.state.email === '' || this.state.senha === '' ? 'none' : ''}>Login</button>
+                  }
+                </form>
+              </div>
+            </div>
+          </section>
           <p style={{ color: 'red', fontSize: '25px' }}>{this.state.erroMensagem}</p>
 
         </main>
