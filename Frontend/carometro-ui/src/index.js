@@ -1,22 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Route, BrowserRouter as Router, Redirect, Switch} from 'react-router-dom';
 import './index.css';
-import App from './App';
+
+
+import Login from './pages/login/login'
+// import NotFound from './pages/NotFound';
+
+
 import reportWebVitals from './reportWebVitals';
 
 
-import { parseJWT, usuarioAutenticado } from './services/auth';
 
 const routing = (
   <Router>
     <div>
       <Switch>
-        {/*
-        Troca pelo que a gente fizer
-        <Route exact path="/" component={Home} />
-        <Route path="/login" component={Login} />
-        <Route path="/notFound" component={NotFound} /> 
-        <Redirect to="/notFound" /> */}
+        <Route exact path="/" component={Login} />
+        <Redirect to="/notFound" />
       </Switch>
     </div>
   </Router>
