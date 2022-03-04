@@ -6,9 +6,6 @@ using ProjetoInternoCarometro.Interfaces;
 using ProjetoInternoCarometro.Repositories;
 using ProjetoInternoCarometro.Utils;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ProjetoInternoCarometro.Controllers
 {
@@ -30,9 +27,6 @@ namespace ProjetoInternoCarometro.Controllers
         {
             try
             {
-
-                _alunoRepository.Cadastrar(novoAluno);
-
                 string[] extensoesPermitidas = { "jpg", "png", "jpeg", "gif" };
                 string uploadResultado = Upload.UploadFile(arquivo, extensoesPermitidas);
 
@@ -47,6 +41,7 @@ namespace ProjetoInternoCarometro.Controllers
                 }
 
                 novoAluno.Foto = uploadResultado;
+                _alunoRepository.Cadastrar(novoAluno);
 
                 return StatusCode(201);
             }
@@ -110,38 +105,5 @@ namespace ProjetoInternoCarometro.Controllers
                 return BadRequest(ex);
             }
         }
-
-
-
-        [HttpPost("imagem")]
-        public IActionResult PostarDir([FromForm] Aluno aluno, IFormFile arquivo)
-        {
-            try
-            {
-                string[] extensoesPermitidas = { "jpg", "png", "jpeg", "gif" };
-                string uploadResultado = Upload.UploadFile(arquivo, extensoesPermitidas);
-
-                if (uploadResultado == "")
-                {
-                    return BadRequest("Arquivo não encontrado!");
-                }
-
-                if (uploadResultado == "Extensão não permitida!")
-                {
-                    return BadRequest("Extensão de arquivo não permitida!");
-                }
-
-                aluno.Foto = uploadResultado;
-
-                return Ok();
-            }
-            catch (Exception erro)
-            {
-
-                return BadRequest(erro.Message);
-            }
-        }
-
-
     }
 }

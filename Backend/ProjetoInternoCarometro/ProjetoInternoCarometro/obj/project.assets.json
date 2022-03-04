@@ -9354,16 +9354,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\43717830821.INFOSCS\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\45597675800.INFOSCS\\.nuget\\packages\\": {}
->>>>>>> 4af303513d2fb7b2d40482239ed1d23adb38c454
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\ProjetoInternoCarometro.csproj",
       "projectName": "ProjetoInternoCarometro",
       "projectPath": "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\ProjetoInternoCarometro.csproj",
@@ -9372,16 +9367,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\43717830821.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\45597675800.INFOSCS\\Desktop\\SENAI\\3DM-Projeto-Carometro\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\ProjetoInternoCarometro.csproj",
-      "projectName": "ProjetoInternoCarometro",
-      "projectPath": "C:\\Users\\45597675800.INFOSCS\\Desktop\\SENAI\\3DM-Projeto-Carometro\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\ProjetoInternoCarometro.csproj",
-      "packagesPath": "C:\\Users\\45597675800.INFOSCS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\45597675800.INFOSCS\\Desktop\\SENAI\\3DM-Projeto-Carometro\\Backend\\ProjetoInternoCarometro\\ProjetoInternoCarometro\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\45597675800.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 4af303513d2fb7b2d40482239ed1d23adb38c454
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9471,11 +9456,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-<<<<<<< HEAD
             "version": "[5.0.14, 5.0.14]"
-=======
-            "version": "[5.0.12, 5.0.12]"
->>>>>>> 4af303513d2fb7b2d40482239ed1d23adb38c454
           }
         ],
         "frameworkReferences": {
@@ -9486,11 +9467,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
->>>>>>> 4af303513d2fb7b2d40482239ed1d23adb38c454
       }
     }
   }
