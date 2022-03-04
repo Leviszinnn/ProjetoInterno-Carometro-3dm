@@ -24,7 +24,22 @@
 
   .box-conteudo{
     background: rgba(255, 253, 253, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4vh;
 
+  }
+
+  .Logo{
+    background-image: url(../../assets/img/logoSESI.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center top;
+    margin-top: 6vh;
   }
   
   .App-header {
@@ -35,3 +50,11 @@
     font-size: 50px;
     color: white;
   }
+
+  form {
+    display : flex;
+    flex-direction: column;
+    justify-content : space-between;
+    align-items: center;
+    padding: 20vh  20vh;
+}
