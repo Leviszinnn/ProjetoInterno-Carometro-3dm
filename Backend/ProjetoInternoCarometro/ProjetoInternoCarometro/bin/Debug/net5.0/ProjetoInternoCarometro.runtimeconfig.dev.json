@@ -1,8 +1,13 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\45597675800.INFOSCS\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\45597675800.INFOSCS\\.nuget\\packages"
+=======
+      "C:\\Users\\43717830821.INFOSCS\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\43717830821.INFOSCS\\.nuget\\packages"
+>>>>>>> 43dc8bc611367955401c5446e9d0b53957bbbc33
     ]
   }
 }

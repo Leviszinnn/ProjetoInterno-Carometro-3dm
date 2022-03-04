@@ -11,7 +11,6 @@ namespace ProjetoInternoCarometro.Repositories
 {
     public class AlunoRepository : IAlunoRepository
     {
-
         CarometroContext ctx = new CarometroContext();
 
         public void Atualizar(int idAluno, Aluno alunoAtualizado)
@@ -73,7 +72,6 @@ namespace ProjetoInternoCarometro.Repositories
             ctx.SaveChanges();
         }
 
-      
         public void Deletar(Aluno aluno)
         {
             ctx.Alunos.Remove(aluno);
@@ -84,7 +82,5 @@ namespace ProjetoInternoCarometro.Repositories
         {
            return ctx.Alunos.ToList();
         }
-
-
     }
 }

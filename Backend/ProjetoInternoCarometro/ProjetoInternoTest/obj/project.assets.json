@@ -6396,11 +6396,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\45597675800.INFOSCS\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\43717830821.INFOSCS\\.nuget\\packages\\": {}
+>>>>>>> 43dc8bc611367955401c5446e9d0b53957bbbc33
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\45597675800.INFOSCS\\Desktop\\SENAI\\3DM-Projeto-Carometro\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\ProjetoInternoTest.csproj",
       "projectName": "ProjetoInternoTest",
       "projectPath": "C:\\Users\\45597675800.INFOSCS\\Desktop\\SENAI\\3DM-Projeto-Carometro\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\ProjetoInternoTest.csproj",
@@ -6409,6 +6414,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\45597675800.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\ProjetoInternoTest.csproj",
+      "projectName": "ProjetoInternoTest",
+      "projectPath": "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\ProjetoInternoTest.csproj",
+      "packagesPath": "C:\\Users\\43717830821.INFOSCS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\43717830821.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 43dc8bc611367955401c5446e9d0b53957bbbc33
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6474,7 +6489,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+>>>>>>> 43dc8bc611367955401c5446e9d0b53957bbbc33
       }
     }
   },
@@ -6483,7 +6502,11 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
       "message": "Problema ao ler o arquivo de cache C:\\Users\\45597675800.INFOSCS\\Desktop\\SENAI\\3DM-Projeto-Carometro\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\43717830821.INFOSCS\\Desktop\\ProjetoInterno-Carometro-3dm\\Backend\\ProjetoInternoCarometro\\ProjetoInternoTest\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> 43dc8bc611367955401c5446e9d0b53957bbbc33
     }
   ]
 }

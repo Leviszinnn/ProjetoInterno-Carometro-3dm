@@ -25,7 +25,6 @@ namespace ProjetoInternoCarometro.Repositories
 
             //Encontrando algum usuário que exista através do email
             var professor = ctx.Professors.FirstOrDefault(p => p.Email == email);
-
             if (professor != null)
             {
                 // criptorafar caso esteja descriptografado
@@ -38,7 +37,6 @@ namespace ProjetoInternoCarometro.Repositories
                     ctx.Professors.Update(professor);
 
                     ctx.SaveChanges();
-
                 }
                 //Com o usuario encontrado, temos a hash do banco para poder comparar com a senha vinda do formulário
                 bool comparado = Criptografia.Comparar(senha, professor.Senha);
