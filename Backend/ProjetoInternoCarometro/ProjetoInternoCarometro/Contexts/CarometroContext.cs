@@ -29,11 +29,7 @@ namespace ProjetoInternoCarometro.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-<<<<<<< HEAD
-                optionsBuilder.UseSqlServer("Data Source=NOTE0113E4\\SQLEXPRESS; initial catalog=DM_CAROMETRO; user Id=sa; pwd=Senai@132;");
-=======
                 optionsBuilder.UseSqlServer("Data Source=DESKTOP-9K54HD5\\SQLEXPRESS; initial catalog=DM_CAROMETRO; user Id=sa; pwd=senai@132;");
->>>>>>> 4af303513d2fb7b2d40482239ed1d23adb38c454
 
             }
 
