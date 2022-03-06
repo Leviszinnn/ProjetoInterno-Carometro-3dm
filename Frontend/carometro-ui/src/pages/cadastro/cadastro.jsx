@@ -1,6 +1,6 @@
 import Cabecalho from "../../components/cabecalho/cabecalho.jsx"
 import "../../assets/css/header.css"
-import "../../assets/img/sesi-logo_2.png"
+import logo2 from "../../assets/img/logo2.png"
 import "../../assets/css/cadastro.css"
 
 export default function cadastro() {
@@ -12,10 +12,9 @@ export default function cadastro() {
                 <section className="container-banner">
                     <section className=" container-fundo container ">
                         <div className=" box-fundo ">
-                            <form action="">
+                            <form action="../../assets/img/logo2.png">
                                 <div className=" box-banner ">
-                                    {/* <img src="./assets/sesi-logo_2.png" alt="logo"> */}
-                                        <img src="./src/assets/img/sesi-logo_2.png" alt="logo" />
+                                        <img src={logo2} alt="logo" />
                                 </div>
                                 <div className=" espaço-entre">
                                     <div className=" box-inputs ">
@@ -51,7 +50,7 @@ export default function cadastro() {
                                         </div>
                                     <hr/>
 
-                                        <button className=" btn-cadastrar "> Cadastro </button>
+                                        <button className="btn-cadastrar"> Cadastro </button>
                                 </div>
                             </form>
                         </div>

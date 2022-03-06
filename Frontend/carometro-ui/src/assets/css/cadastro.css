@@ -61,10 +61,11 @@ form {
 
 .espaço-entre {
     width: 100%;
-    height: 235px;
+    height: 310px;
     display : flex;
     flex-direction: column;
     justify-content : space-between;
+    align-items: center;
 }
 
 .box-inputs {
@@ -118,7 +119,7 @@ input[type="file"] {
 
 hr {
     border: 1px solid red;
-    /* width: 50vh; */
+    width: 50vh;
     /* border-radius: 1px; */
   }
 
