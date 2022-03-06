@@ -15,7 +15,7 @@ export default function cadastro() {
                             <form action="">
                                 <div className=" box-banner ">
                                     {/* <img src="./assets/sesi-logo_2.png" alt="logo"> */}
-                                        <img src="sesi-logo_2.png" alt="logo" />
+                                        <img src="./src/assets/img/sesi-logo_2.png" alt="logo" />
                                 </div>
                                 <div className=" espaço-entre">
                                     <div className=" box-inputs ">
