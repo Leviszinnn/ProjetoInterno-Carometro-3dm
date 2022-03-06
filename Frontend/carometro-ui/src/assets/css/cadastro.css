@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container-banner {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-image: url(../img/Cadastro.png);
+    background-size: cover;
+}
+
+.box-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: px;
+}
+
+.box-banner  h1 {
+    font-family : 'Nunito', sans-serif;
+    color:black;
+    font-size: 50px;
+}
+
+.container-fundo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.box-fundo {
+    margin-top: 53px;
+    background-color: rgba(255, 253, 253, 0.9);
+    height: 500px;
+    width: 700px;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content : space-between;
+    border-radius: 30px;
+}
+
+form {
+    height: 459px;
+    width: 770px;
+    display : flex;
+    flex-direction: column;
+    justify-content : space-between;
+    align-items: center;
+    padding: 25px  90px ;
+}
+
+.espaço-entre {
+    width: 100%;
+    height: 235px;
+    display : flex;
+    flex-direction: column;
+    justify-content : space-between;
+}
+
+.box-inputs {
+    display : flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box-inputs  span {
+    font-family:'Nunito', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.box-inputs  input {
+    background-color: white ;
+    height: 30px;
+    padding-left: 10px ;
+}
+
+.btn-cadastrar {
+    width: 257px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 1) ;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px ;
+    font-weight: bold;
+    /* margin-top: 15px;
+    /* padding: 5px  65px ; */ 
+    border: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.l1 {
+    padding: 20px 10px;
+    width: 200px;
+    background-color: #333;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid red;
+    /* width: 50vh; */
+    /* border-radius: 1px; */
+  }
+
+  .box-linha {
+      display: flex;
+      justify-content: center;
+  }

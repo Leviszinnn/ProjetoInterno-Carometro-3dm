@@ -16,7 +16,7 @@ const routing = (
   <Router>
     <div>
       <Switch>
-        <Route path="/Cadastro" component={Cadastro}/>
+        <Route path="/cadastro" component={Cadastro}/>
         <Route path="/Listagem" component={Listagem}/>
         <Route path="/Reconhecimento" component={Reconhecimento}/>
         {/*
