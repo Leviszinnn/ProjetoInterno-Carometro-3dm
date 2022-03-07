@@ -81,11 +81,11 @@ export default class Login extends Component {
                   />
                   {
                     this.state.isLoading === true &&
-                    <button type='submit' disabled>Loading...</button>
+                    <button className='btn' type='submit' disabled>Loading...</button>
                   }
                   {
                     this.state.isLoading === false &&
-                    <button type='submit' disabled={this.state.email === '' || this.state.senha === '' ? 'none' : ''}>Login</button>
+                    <button className='btn' type='submit' disabled={this.state.email === '' || this.state.senha === '' ? 'none' : ''}>Login</button>
                   }
                 </form>
               </div>

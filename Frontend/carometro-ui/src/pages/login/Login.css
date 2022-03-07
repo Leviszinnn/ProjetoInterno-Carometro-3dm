@@ -29,7 +29,6 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 4vh;
-
   }
 
   .Logo{
@@ -39,6 +38,7 @@
     justify-content: center;
     align-items: center;
     background-position: center top;
+    height: 350px;
     margin-top: 6vh;
   }
   
@@ -55,6 +55,15 @@
     display : flex;
     flex-direction: column;
     justify-content : space-between;
+    height: 10px;
     align-items: center;
     padding: 20vh  20vh;
+}
+
+.btn {
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
 }
