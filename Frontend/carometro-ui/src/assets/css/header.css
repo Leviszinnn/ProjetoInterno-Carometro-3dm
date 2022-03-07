@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+:root{
+    --mainColor: #E5E5E5;
+    --secondMain: #727171;
+    --secondaryColor: #FF0000;
+    --complementFund1: #FF635A;
+    --complementFund2: #FAF46B;
+    --complementEM: #5AF078;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+header{
+    border-bottom: 1px solid var(--secondMain);
+}
+
+.container{
+    /* background-color: royalblue; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.c-header{
+    /* background-color: red; */
+    max-width: 1440px;
+    width: 95%;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.c-header__logo{
+    height: 100%;
+}
+
+.menu-header{
+    /* background-color: salmon; */
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-header__text{
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--secondMain);
+    width: 30%;
+}
+
+.menu-header__text--sublinhado{
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--secondMain);
+    width: 30%;
+    border-bottom: 1px solid var(--secondaryColor);
+}
