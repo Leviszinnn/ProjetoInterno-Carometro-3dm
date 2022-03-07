@@ -41,7 +41,7 @@ namespace ProjetoInternoCarometro.Controllers
 
                 if (profBuscado == null)
                 {
-                    return Unauthorized(new { msg = "Email ou senha inválidos!" });
+                    return BadRequest("Email ou senha inválidos!");
                 }
 
                 var minhasClaims = new[]

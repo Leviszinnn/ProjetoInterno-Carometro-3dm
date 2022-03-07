@@ -62,6 +62,11 @@
             <param name="senha">senha do usuario</param>
             <returns>Objeto Usuario que foi encontrado</returns>
         </member>
+        <member name="T:ProjetoInternoCarometro.Interfaces.IReconhecimentoRepository">
+            <summary>
+            Interface resonsável pela ReconhecimentoRepository
+            </summary>
+        </member>
         <member name="M:ProjetoInternoCarometro.Utils.Upload.UploadFile(Microsoft.AspNetCore.Http.IFormFile,System.String[])">
             <summary>
             Faz o upload do arquivo para o servidor

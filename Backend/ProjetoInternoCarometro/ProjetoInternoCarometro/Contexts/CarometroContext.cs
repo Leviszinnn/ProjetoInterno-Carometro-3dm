@@ -29,13 +29,10 @@ namespace ProjetoInternoCarometro.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-<<<<<<< HEAD
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-9K54HD5\\SQLEXPRESS; initial catalog=DM_CAROMETRO; user Id=sa; pwd=senai@132;");
-
-=======
-                optionsBuilder.UseSqlServer("Data Source=NOTE0113E4\\SQLEXPRESS; initial catalog=DM_CAROMETRO; Integrated Security=true;");
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-LEVIxD\\SQLEXPRESS; initial catalog=DM_CAROMETRO; user Id=sa; pwd=senai@132;");
                 //optionsBuilder.UseSqlServer("Data Source=DESKTOP-9K54HD5\\SQLEXPRESS; initial catalog=DM_CAROMETRO; user Id=sa; pwd=senai@132;");
->>>>>>> 43dc8bc611367955401c5446e9d0b53957bbbc33
+                //optionsBuilder.UseSqlServer("Data Source=NOTE0113E4\\SQLEXPRESS; initial catalog=DM_CAROMETRO; Integrated Security=true;");
+                //optionsBuilder.UseSqlServer("Data Source=DESKTOP-9K54HD5\\SQLEXPRESS; initial catalog=DM_CAROMETRO; user Id=sa; pwd=senai@132;");
             }
 
         }
